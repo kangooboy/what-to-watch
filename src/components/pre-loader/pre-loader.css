@@ -1,0 +1,36 @@
+.pre-loader {
+  display: block;
+  margin: 40% 50%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+.pre-loader:after {
+  margin: 50% auto;
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 32px solid rgb(26, 209, 230);
+  border-color: rgb(26, 209, 230) transparent rgb(26, 209, 230) transparent;
+  animation: pre-loader 1.2s infinite;
+}
+@keyframes pre-loader {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
